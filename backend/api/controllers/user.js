@@ -3,7 +3,7 @@ const generateToken = require('../../utils/generateToken')
 const bcrypt = require('bcrypt');
 
 
-exports.registerUser =  (req,res) => {
+exports.registerUser =  (req,res,next) => {
     
     User.find({email:req.body.email})
     .exec()
@@ -32,33 +32,33 @@ exports.registerUser =  (req,res) => {
                       })
                   })
                   .catch(err => {
-                       return res.status(400).json({message:err.message});
+                       return res.status(500).json({message:err.message});
                   })
                }
             });
         }
     })
     .catch(err => {
-       res.status(400).json({message:err.message})
+       res.status(500).json({message:err.message})
     })
  }
 
 
- exports.loginUser = (req,res) => {
-    const {email,password} = req.body;
-    User.find({email})
+ exports.loginUser = (req,res,next) => {
+
+    User.find({email:req.body.email})
     .exec()
     .then(user => {
-        if(user.length <=0) {
-            return res.status(400).json({
-                message:'user does exists'
+        if(user.length <1) {
+            return res.status(401).json({
+                message:'user does not exists'
             })
         }else {
-            bcrypt.compare(password,user[0].password,(err,hashed) => {
+            bcrypt.compare(req.body.password,user[0].password,(err,result) => {
                 if(err) {
-                    return res.status(400).json({message:'internal error'})
+                    return res.status(500).json({message:'email or password is wrong'})
                 }
-                if(hashed) {
+                if(result) {
                   return res.status(200).json({
                      _id:user._id,
                      name:user.name,
@@ -76,7 +76,7 @@ exports.registerUser =  (req,res) => {
  }
 
 
- exports.getUserProfile = (req,res) => {
+ exports.getUserProfile = (req,res,next) => {
      const id = req.user._id;
      User.findById(id)
          .exec()
@@ -95,7 +95,7 @@ exports.registerUser =  (req,res) => {
          })
  }
 
- exports.updateUserProfile = (req,res) => {
+ exports.updateUserProfile = (req,res,next) => {
      const {name,email,password} = req.body;
       const id = req.user._id;
       User.findById(id)
@@ -123,7 +123,7 @@ exports.registerUser =  (req,res) => {
           })
  }
 
- exports.getUsers = (req,res) => {
+ exports.getUsers = (req,res,next) => {
      User.find({})
      .exec()
      .then(users => {
@@ -136,7 +136,7 @@ exports.registerUser =  (req,res) => {
      })
  }
 
- exports.updateUser = (req,res) => {
+ exports.updateUser = (req,res,next) => {
      const {name,email,isAdmin} = req.body;
      User.findById(req.params.id)
      .exec()
@@ -160,7 +160,7 @@ exports.registerUser =  (req,res) => {
      })
 
  }
- exports.deleteUser = (req,res) => {
+ exports.deleteUser = (req,res,next) => {
      const id = req.params.id;
      User.findById(id)
          .then(user => {
@@ -181,7 +181,7 @@ exports.registerUser =  (req,res) => {
          })
  }
 
- exports.getUser = (req,res) => {
+ exports.getUser = (req,res,next) => {
      const id = req.params.id;
      User.findById(id)
         .then(user => {
