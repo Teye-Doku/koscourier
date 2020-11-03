@@ -1,0 +1,137 @@
+.home__banner {
+  display: flex;
+  margin-top: -30px;
+  height: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.home__bannerImage {
+  margin-top: -73px;
+  height: 535px;
+  margin-bottom: -20px;
+  object-fit: contain;
+  width: 76%;
+}
+.home__category {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.home_categories {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+.home__categoryHeading {
+  margin-top: 10px !important;
+  background-color: #384b52;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px;
+  text-align: left;
+}
+.home__categoryOption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+.home__categoryOptionTwo {
+  margin-right: 40px;
+}
+.header__twoOptionLineHide {
+  color: #384b52;
+}
+
+.home__categoryOptionOne {
+  height: 12px;
+
+  margin-left: 20px;
+  margin-right: 40px;
+  width: 12px;
+  background-color: red;
+}
+.home__amazing {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: red;
+  text-align: left;
+}
+.home__trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home__amazingTitle {
+  padding-left: 20px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: red;
+  font-weight: 600;
+}
+.home__trendingTitle {
+  padding-left: 30px;
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: red;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.home__amazingProducts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.home__amazingProduct {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border: 1px solid red;
+  margin-left: 20px;
+}
+.home__trendingProducts {
+  display: flex;
+}
+.home__trendingProduct {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  margin-left: 20px;
+}
+.home__trendingSingleProduct {
+  width: 130px;
+  height: 150px;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+.home__trendingCountryFlag {
+  width: 50px;
+  height: 30px;
+}
+.home__trendingCountry {
+  display: flex;
+  justify-content: flex-start;
+}
+.home__shippingBanner {
+  width: 100%;
+  height: 300px;
+  background: url("../assets/images/shipping_banner.jpg");
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 10px;
+}
