@@ -60,11 +60,11 @@ exports.registerUser =  (req,res,next) => {
                 }
                 if(result) {
                   return res.status(200).json({
-                     _id:user._id,
-                     name:user.name,
-                     email:user.email,
-                     isAdmin:user.isAdmin,
-                     token:generateToken(user._id)
+                     _id:user[0]._id,
+                     name:user[0].name,
+                     email:user[0].email,
+                     isAdmin:user[0].isAdmin,
+                     token:generateToken(user[0]._id)
                   })
                 }
             });
@@ -108,10 +108,10 @@ exports.registerUser =  (req,res,next) => {
              }
              const updatedUser =  user.save();
              res.status(200).json({
-                 _id:updatedUser._id,
-                 name:updatedUser.name,
-                 email:updatedUser.email,
-                 isAdmin:updatedUser.isAdmin,
+                 _id:updatedUser[0]._id,
+                 name:updatedUser[0].name,
+                 email:updatedUser[0].email,
+                 isAdmin:updatedUser[0].isAdmin,
                  token:generateToken(updatedUser._id)
              })
 
