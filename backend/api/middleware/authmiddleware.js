@@ -39,4 +39,4 @@ exports.admin = (req, res, next) => {
   }
 }
 
-export { protect, admin }
+

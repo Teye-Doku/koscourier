@@ -4,31 +4,31 @@ const bcrypt = require('bcrypt');
 
 
 exports.registerUser =  (req,res) => {
-    const {name,email,password} = req.body;
-    User.find({email})
+    
+    User.find({email:req.body.email})
     .exec()
     .then(user => {
         if(user.length >=1){
-            return res.status(400).json({message:'user alredy exits'})
+            return res.status(409).json({message:'user alredy exits'})
         }else {
-            bcrypt.hash(password,10,(err,hashed) => {
+            bcrypt.hash(req.body.password,10,(err,hash) => {
                if(err){
-                   return res.status(400).json({message:'internal error'})
+                   return res.status(500).json({message:'internal error'})
                }
-               if(hashed) {
-                  const user = User.create({
-                      name:name,
-                      email:email,
-                      password:hashed
-                  })
-                  user.save()
-                  .then(user => {
+               if(hash) {
+                 const user = new User({
+                   name:req.body.name,
+                   email:req.body.email,
+                   password:hash  
+                 })
+                  
+                  user.save().then(user => {
                       return res.status(200).json({
                           _id:user._id,
                           name:user.name,
                           email:user.email,
                           isAdmin:user.isAdmin,
-                          token:generateToken(user._id)
+                          
                       })
                   })
                   .catch(err => {
