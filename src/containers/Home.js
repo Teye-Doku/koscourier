@@ -27,11 +27,7 @@ function Home(){
                         <div className="home__categoryOption">
                           <div className="home__categoryOptionOne"></div>   
                           <span className="home__categoryOptionTwo">Baby</span> 
-                        </div>   
-                        <div className="home__categoryOption">
-                          <div className="home__categoryOptionOne"></div>   
-                          <span className="home__categoryOptionTwo">Arts/ Craft</span> 
-                        </div>   
+                        </div>     
                         <div className="home__categoryOption">
                           <div className="home__categoryOptionOne"></div>   
                           <span className="home__categoryOptionTwo">Home Deco</span> 
@@ -44,10 +40,7 @@ function Home(){
                           <div className="home__categoryOptionOne"></div>   
                           <span className="home__categoryOptionTwo">Tools</span> 
                         </div>   
-                        <div className="home__categoryOption">
-                          <div className="home__categoryOptionOne"></div>   
-                          <span className="home__categoryOptionTwo">Security</span> 
-                        </div>   
+                    
                     </div> 
                  </div>
                 

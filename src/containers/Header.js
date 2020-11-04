@@ -15,7 +15,7 @@ function Header() {
                   <div className="header__oneNav">
                      <span>FIND SHIPPING ADDRESS</span>
                   <div className="header__twoSearch">
-                     <input type="text" className="header__oneSearchInput" /> 
+                     <input type="text" placeholder="type city" className="header__oneSearchInput" />
                      <SearchIcon className="header_oneSearchIcon" />
                   </div>
                     {/* <div className="header__oneHelp">
@@ -27,7 +27,7 @@ function Header() {
               <div className="header__two">
                   {/* <MenuIcon className="header__twoMenuIcon" /> */}
                   <div className="header__twoSearch">
-                     <input type="text" className="header__twoSearchInput" /> 
+                     <input type="text" placeholder="search" className="header__twoSearchInput" /> 
                      <SearchIcon className="header_twoSearchIcon" />
                   </div>
                   <div className="header__twoNav">

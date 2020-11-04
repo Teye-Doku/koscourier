@@ -1,4 +1,5 @@
 .header {
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -14,6 +15,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.header__oneNav > span {
+  margin-left: 17px;
 }
 .header_twoSearchIcon {
   padding: 5px;
