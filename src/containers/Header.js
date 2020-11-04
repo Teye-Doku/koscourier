@@ -33,12 +33,9 @@ function Header() {
                   <div className="header__twoNav">
                       <div className="header__twoOptionOne">
                            <span className="header__twoOptionLineOne">Account</span>
-                           <span className="header__twoOptionLineTwo">
-                                
-                                <Link to="/auth" style={{textDecoration:'none',color:'white'}}>
-                                  Sign In
-                                </Link>
-                                </span>
+                           <Link to="/auth" style={{textDecoration:'none',color:'white'}}>
+                              <span className="header__twoOptionLineTwo">Sign In</span>
+                           </Link>
                       </div>
                       <div className="header__twoOptionOne">
                            <span className="header__twoOptionLineHide">Account</span>

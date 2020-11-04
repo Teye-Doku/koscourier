@@ -29,12 +29,12 @@ function App() {
              <Header />
              <Orders />
          </Route> */}
+         
          <Route path="/auth">
              <Auth />
          </Route>
          <Route path="/">
               <Header />
-              
               <Home />
               <Footer />
          </Route>
