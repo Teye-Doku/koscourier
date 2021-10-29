@@ -1,0 +1,12 @@
+.dirver__searchInput {
+  width: 100%;
+}
+
+.dirver__searchInput input {
+  width: 80%;
+  height: 40px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 0 5px;
+  border-radius: 5px;
+}

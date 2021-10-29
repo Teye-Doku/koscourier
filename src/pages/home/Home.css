@@ -1,0 +1,130 @@
+.category__container {
+  display: flex;
+  background-color: #eef1f5;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+}
+.banner {
+  width: 100%;
+  object-fit: contain;
+}
+.banner__container {
+  position: relative;
+}
+.banner__toph2 {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+.banner__toph3 {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.banner__h2 {
+  position: absolute;
+  top: 160px;
+  right: 40px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+.banner__toph4 {
+  position: absolute;
+  top: 220px;
+  right: 40px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+.banner__container > p {
+  position: absolute;
+  top: 160px;
+  right: 40px;
+  color: white;
+
+  font-family: "Montserrat", sans-serif;
+}
+.banner__button {
+  position: absolute;
+  top: 280px;
+  right: 40px;
+  background-color: #dc291e;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #333333;
+  display: flex;
+}
+
+.footer__left {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__item h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.footer__spacing {
+  margin: 10px 0;
+  width: 26px;
+  height: 4px;
+  background-color: #dc291e;
+  border-radius: 2px;
+}
+
+.footer__item p {
+  color: white;
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15px;
+}
+@media screen and (max-width: 480px) {
+  .category__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .banner__container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("../../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner {
+    display: none;
+  }
+}
