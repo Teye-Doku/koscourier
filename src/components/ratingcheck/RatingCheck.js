@@ -13,14 +13,13 @@ import './RatingCheck.css';
            </div> 
            <div className="rating__checking">
            <div className="rating__weight">
-            <p>Weight*</p>   
-            <input type="text" placeholder="weight" />
+            <p>Delivery Mode</p>   
+            <select>
+                <option value="motor">Motor</option>
+                <option value="van">Van</option>
+            </select>
            </div>
-            <div className="rating__spacing"></div>
-            <div className="rating__unit">
-            <p>Unit*</p>    
-            <input type="text" placeholder="unit"   />
-            </div>
+            
            </div>
         </div>
     )
