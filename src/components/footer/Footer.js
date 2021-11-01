@@ -41,10 +41,10 @@ import pcsrc from '../../images/pcsrc.png';
                 <h3>Social Media</h3>
            </div> */}
       </div>
-         <div className="header__licensed">
+         {/* <div className="header__licensed">
              
             <img className="licensed__logo" src={pcsrc} alt="" />
-         </div>
+         </div> */}
         </>
     )
 }
