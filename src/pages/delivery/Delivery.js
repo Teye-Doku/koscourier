@@ -32,7 +32,7 @@ export default function Delivery() {
          setNotifications(true);
     }
     return (
-        <div style={{height:"2000px"}}>
+        <div style={{height:"1500px"}}>
              <div className="delivery">
              <div className="delivery__navigation">
                          <p  onClick={showPrepare}>Prepare Delivery</p>

@@ -3,7 +3,7 @@ import LockIcon from '@material-ui/icons/Lock';
 import './Signup.css';
  function Signup() {
     return (
-        <div className="signup" style={{height:"2000px"}}>
+        <div className="signup" style={{height:"1500px"}}>
              <div className="signup__body">
                  <div className="signup__lock">
                       <div className="lock__container">

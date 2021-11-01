@@ -6,7 +6,7 @@ import './About.css';
 
 export default function About() {
      return (
-        <div className="about" style={{height:"2000px"}}>
+        <div className="about" style={{height:"1500px"}}>
         <div className="about__sidebar">
             <div className="aboutsidebar_item selected">
                 <span>About Koscourier</span>

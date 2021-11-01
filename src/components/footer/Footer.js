@@ -20,7 +20,7 @@ import pcsrc from '../../images/pcsrc.png';
                   <div className="footer__spacing"></div>
                   <p>Telephone: +233 249855932</p>
                   <p>Address: Alfred Adejetey Street</p>
-                  <p>Email: info@koscourier.com </p>
+                  <p>Email: business@koscourier.com </p>
               </div>
               <div className="footer__item">
                   <h3>Legal</h3>

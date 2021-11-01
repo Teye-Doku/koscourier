@@ -53,6 +53,12 @@
   text-align: left;
   font-family: "Roboto Condensed", sans-serif;
 }
+.rating__weight select {
+  width: 320px;
+  height: 30px;
+  background-color: white;
+  color: black;
+}
 .rating__spacing {
   width: 10px;
 }

@@ -8,7 +8,9 @@ import RatingCheck from 'components/ratingcheck/RatingCheck';
 import DeliveryItem from 'components/deliveryitem/DeliveryItem';
 import DriverSearch from 'components/driversearch/DriverSearch';
 
-import banner from 'images/bannerone.jpg';
+// import banner from 'images/banner.jpg';
+// import bannerone from 'images/bannerone.jpg';
+import banners from 'images/banners.jpg';
 
 
 
@@ -17,15 +19,18 @@ function Home() {
    const handler = () => {
       console.log('user created');
    }
+
+  //  <img className="banner" src={banner} alt="" />
+  //         <h2 className="banner__toph2">Your</h2>
+  //         <h2 className="banner__toph3" >Nationwide</h2>
+  //         <h2 className="banner__h2">Delivery</h2>
+  //         <h2 className="banner__toph4">Partner</h2>
+  //         <button className="banner__button" onClick={()=>history.push('/signup')}>Sign Up</button>
   return (
-    <div className="home" style={{height:"2000px"}}>
+    <div className="home" style={{height:"1500px"}}>
        <div className="banner__container">
-          <img className="banner" src={banner} alt="" />
-          <h2 className="banner__toph2">Your</h2>
-          <h2 className="banner__toph3" >Nationwide</h2>
-          <h2 className="banner__h2">Delivery</h2>
-          <h2 className="banner__toph4">Partner</h2>
-          <button className="banner__button" onClick={()=>history.push('/signup')}>Sign Up</button>
+         
+         <img className="banner" src={banners} alt=""/>
        </div>
       <div className="category__container">
         <Category 
