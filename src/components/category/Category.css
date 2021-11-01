@@ -3,6 +3,9 @@
   height: 380px;
   box-sizing: border-box;
   background-color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .category__top {

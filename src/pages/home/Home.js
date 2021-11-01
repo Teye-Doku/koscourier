@@ -27,7 +27,7 @@ function Home() {
   //         <h2 className="banner__toph4">Partner</h2>
   //         <button className="banner__button" onClick={()=>history.push('/signup')}>Sign Up</button>
   return (
-    <div className="home" style={{height:"1500px"}}>
+    <div className="home" >
        <div className="banner__container">
          
          <img className="banner" src={banners} alt=""/>
