@@ -1,4 +1,7 @@
-import TrendingFlatIcon from '@material-ui/icons/TrendingFlat';
+import dimension from 'images/dimensiondata.png';
+import gowyd from 'images/gowyd.jpg';
+import krm from 'images/krm.jpg';
+import zoe from 'images/zoe.jpg';
 
 import './About.css';
 
@@ -6,8 +9,8 @@ import './About.css';
 
 export default function About() {
      return (
-        <div className="about" style={{height:"1500px"}}>
-        <div className="about__sidebar">
+        <div className="about" style={{height:"2000px"}}>
+        {/* <div className="about__sidebar">
             <div className="aboutsidebar_item selected">
                 <span>About Koscourier</span>
                 <TrendingFlatIcon />
@@ -19,7 +22,7 @@ export default function About() {
             </div>
             </a>
             
-        </div>
+        </div> */}
         <div className="about__main">
       
         <div className="aboutMain__content">
@@ -43,7 +46,7 @@ We are committed to continually enhancing our operations across the nation while
             
             <p>Our hallmark is smart delivery, we manage a web based delivery system which collects details of our clients and delivery and match with our riders and drivers in real time. 
 In the area of express delivery we provide a smart system to our clients to enable us make accurate delivery and on time. We also offer partnership schemes to our clients to have our bikes or vans stationed at their business location for fast and easy delivery. 
-With the use of technology we have successfully introduced market leading delivery and logistics platform which operates throughout the nation. As a leading global provider of comprehensive logistics and transportation solutions, our breadth of services include express courier delivery, port cargo delivery, supply chain management, e-commerce and record management services.
+With the use of technology we have successfully introduced market leading delivery and logistics platform which operates throughout the nation. As a leading global provider of comprehensive logistics and transportation solutions, our breadth of services include Express Delivery, Port Cargo Delivery, Package Tracking, Supply Chain Management, E-commerce Solutions, Dedicated Corporate Delivery.
 </p>
             
         </div>
@@ -65,6 +68,20 @@ We also recognize that to continue to grow a truly sustainable business we must 
 We live in an era where technology transforms and influences our daily lives more than ever before. Increasingly, consumers rely on digital connectivity, using it to enhance their lifestyles. This in turn presents opportunities for us to serve them better.
 We have actively developed a culture where innovation can thrive. We will continue to invest in our people, technology and partnership, and also to implement innovative solutions to satisfy our customers’ evolving needs, while still delivering maximum value to our stakeholders and maintaining our partnerships with local communities.
 </p>
+            
+        </div>
+        <div className="aboutMain__content">
+            <h3>Our Clients</h3>
+            
+            <p>Our good work has attracted a long list of clients. 
+                Through dedication and customer satisfaction we have maintained our customers over the years. KOS Courier Limited is proud to say most of our clients are won through recommendations.
+                 Below is a list of our key clients.</p>
+             <div className="client__logos">
+                <img src={dimension} alt="" />
+                <img src={krm} alt="" />
+                <img src={zoe} alt="" />
+                <img src={gowyd} alt="" />
+             </div>    
             
         </div>
      

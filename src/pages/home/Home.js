@@ -8,9 +8,10 @@ import RatingCheck from 'components/ratingcheck/RatingCheck';
 import DeliveryItem from 'components/deliveryitem/DeliveryItem';
 import DriverSearch from 'components/driversearch/DriverSearch';
 
-// import banner from 'images/banner.jpg';
-// import bannerone from 'images/bannerone.jpg';
-import banners from 'images/banners.jpg';
+//  import banner1 from 'images/banner1.jpg';
+ import banner2 from 'images/banner2.jpg';
+import banner3 from 'images/banner3.jpg';
+// import banners from 'images/banners.jpg';
 
 
 
@@ -21,29 +22,42 @@ function Home() {
    }
 
   //  <img className="banner" src={banner} alt="" />
-  //         <h2 className="banner__toph2">Your</h2>
-  //         <h2 className="banner__toph3" >Nationwide</h2>
-  //         <h2 className="banner__h2">Delivery</h2>
-  //         <h2 className="banner__toph4">Partner</h2>
-  //         <button className="banner__button" onClick={()=>history.push('/signup')}>Sign Up</button>
+
   return (
     <div className="home" >
        <div className="banner__container">
-         
-         <img className="banner" src={banners} alt=""/>
+         <img className="banner" src={banner3} alt=""/>
+         <div>          
+           <h2 className="banner__toph2">Your</h2>
+          <h2 className="banner__toph3" >Nationwide</h2>
+          <h2 className="banner__h2">Delivery</h2>
+          <h2 className="banner__toph4">Partner</h2>
+          <button className="banner__button" onClick={()=>history.push('/signup')}>Sign Up</button>
+          </div>
+         <div className="banner__flexible">  
+           <h2>Flexible Payment To </h2>
+           <h2> Own A Bike</h2>   
+           <p className="ride">Ride-To-Own</p>     
+           {/* <h2 className="banner__tophl2">Flexible</h2>
+          <h2 className="banner__tophl3" >Payment</h2>
+          <h2 className="banner__hl2">To Own A</h2>
+          <h2 className="banner__tophl4">Bike</h2>
+          <h2 className="banner__tophl5">Right-To-Own</h2> */}
+          </div>
+          <button className="banner__buttonl" onClick={()=>history.push('/partnership')}>Start Riding</button>
        </div>
       <div className="category__container">
-        <Category 
+        {/* <Category 
         label="Search Driver" 
         title="Quick Driver/Rider Search" 
         subtitle="Search for drivers in your locality." 
         buttonHandler={handler}>
         <DriverSearch />
-        </Category>
+        </Category> */}
         <Category 
         label="Check Rate" 
-        title="Get A Quick Delivery Rate" 
-        subtitle="Competitive shipping rates designed for your needs." 
+        title="Quick Driver/Rider Search" 
+        subtitle="earch for drivers in your locality." 
         buttonHandler={handler}>
          <RatingCheck />
         </Category>

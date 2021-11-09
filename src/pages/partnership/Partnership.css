@@ -1,4 +1,4 @@
-.trackdelivery {
+.partnership {
   width: 100%;
   height: 600px;
   padding: 0 30px;
@@ -6,65 +6,98 @@
   box-sizing: border-box;
 }
 
-.trackdelivery__sidebar {
+.partnership__sidebar {
   margin-top: 10px;
   width: 30%;
 }
-.trackdelivery__main {
+.partnership__main {
   width: 70%;
   padding: 20px 20px 0 20px;
   margin: 0 auto;
 }
-.trackingsidebar_item {
-  width: 80%;
-  padding: 0 20px;
-  height: 70px;
-  border-top: 0.4px solid #e7e7e7;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  background-color: #fff;
-}
-.trackingsidebar_item span {
+
+.partnership__content h3 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #c71a0a;
 }
-.last {
-  border-bottom: 0.4px solid #e7e7e7;
-}
-.trackingsidebar_item .MuiSvgIcon-root {
-  color: #dc291e;
-}
-.selected {
-  background-color: #dc291e;
-  color: white;
+.partnership__content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500px;
 }
 
-.selected .MuiSvgIcon-root {
-  color: white;
+.partnership__form {
+  width: 400px;
+  margin: 20px auto;
 }
-.trackingMain__content {
+
+.partnership__form__input {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.partnership__form__input textarea {
+  width: 100%;
+}
+.partnership__form__input input {
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.partnership__form button {
+  background-color: #dc291e;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-family: "Roboto condensed", sans-serif;
+  outline: none;
+  transition: all 0.3s ease-in;
+  margin-top: 10px;
+}
+.partnership__list_logo {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  height: 200px;
-  border-radius: 10px;
+  padding: 20px;
 }
-.trackingMain__content h3 {
+.partnership__list_logo img {
+  width: 100px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+.partnership__form button:hover {
+  background-color: #c71a0a;
+}
+.partnership__form__input input:focus {
+  outline: none;
+}
+.partnership__mainh3 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #c71a0a;
 }
-.trackingMain__content p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+.partnership__main ul {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.partnership__main ul span {
   font-weight: 600;
+  font-family: "Roboto condensed", sans-serif;
 }
-
+.partnership__main ul li {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
 .trackingIcon__container {
   height: 50px;
   width: 50px;
@@ -150,6 +183,16 @@
   background-color: #c71a0a;
 }
 @media screen and (max-width: 700px) {
+  .partnership__list_logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .partnership__list_logo img {
+    margin-bottom: 20px;
+  }
   .trackdelivery__sidebar {
     display: none;
   }
@@ -172,6 +215,6 @@
     width: 90%;
   }
   /* .trackingMain__content p {
-    display: none;
-  } */
+      display: none;
+    } */
 }

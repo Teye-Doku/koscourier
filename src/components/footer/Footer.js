@@ -10,15 +10,15 @@ import pcsrc from '../../images/pcsrc.png';
                   <h3>About</h3>
                   <div className="footer__spacing"></div>
                   <p>About Koscourier</p>
-                  <p>Partnerships</p>
+                  <p>Partnership</p>
                   <p>Delivery Services</p>
-                  <p>Custom Pick</p>
+                  
                   
               </div>
               <div className="footer__item">
                   <h3>Contact</h3>
                   <div className="footer__spacing"></div>
-                  <p>Telephone: +233 249855932</p>
+                  <p>Telephone: +233 244088081</p>
                   <p>Address: Alfred Adejetey Street</p>
                   <p>Email: business@koscourier.com </p>
               </div>

@@ -8,6 +8,7 @@ import About from 'pages/about/About';
 import Delivery from 'pages/delivery/Delivery';
 import Footer from 'components/footer/Footer';
 import Contact from 'pages/contact/Contact';
+import Partnership from 'pages/partnership/Partnership';
 import {
   BrowserRouter as Router,
   Route
@@ -22,6 +23,11 @@ function App() {
         <Route path="/delivery" exact>
          <Header />
           <Delivery />
+          <Footer />
+        </Route>
+        <Route path="/partnership" exact>
+         <Header />
+          <Partnership />
           <Footer />
         </Route>
         <Route path="/trackdelivery" exact>

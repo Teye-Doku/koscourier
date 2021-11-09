@@ -17,6 +17,7 @@ import './RatingCheck.css';
             <select>
                 <option value="motor">Motor</option>
                 <option value="van">Van</option>
+                <option value="truck">Truck</option>
             </select>
            </div>
             

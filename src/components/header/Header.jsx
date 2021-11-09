@@ -135,7 +135,7 @@ const Header =( ) =>{
                     component={Link} 
                     to="/trackdelivery" 
                     label="Track" /> */}
-                   <Tab className={classes.tab} onClick={()=>setValue(2)}   component={Link} to="/delivery" label="Delivery" />
+                   <Tab className={classes.tab} onClick={()=>setValue(2)}   component={Link} to="/delivery" label="Custom Delivery" />
                    <Button 
                     variant="contained"
                     component={Link}
@@ -192,7 +192,7 @@ const Header =( ) =>{
                   button divider component={Link}to="/delivery"> 
                    <ListItemText 
                    className={value === 2 ? [classes.drawerItem,classes.drawerSelectedItem]: classes.drawerItem}
-                   disableTypography>Delivery</ListItemText> 
+                   disableTypography>Custom Delivery</ListItemText> 
                  </ListItem>
                  <ListItem 
                    selected = {value === 3}
@@ -223,7 +223,7 @@ const Header =( ) =>{
           <div className="header__bar">
                 <span onClick={()=>history.push('/about')}>About Us</span>
                 
-                <span>Partnership</span>
+                <span onClick={()=>history.push('/partnership')}>Partnership</span>
           </div>
           <div className="header">
           <img  className="header__logo" src={koslogo} alt="header__logo" />

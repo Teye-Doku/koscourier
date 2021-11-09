@@ -97,7 +97,7 @@ export default function Delivery() {
     
                       <div className="delivery__send">
                           <div>
-                           <p>Send To*</p>
+                           <p>Sender*</p>
                            <input type="text" placeholder="Name" />
                           </div>
                           <div>
@@ -111,7 +111,7 @@ export default function Delivery() {
                       </div>
                       <div className="delivery__receive">
                           <div>
-                           <p>Receive By*</p>
+                           <p>Receiver*</p>
                            <input type="text" placeholder="Name" />
                           </div>
                           <div>
