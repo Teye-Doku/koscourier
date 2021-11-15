@@ -11,6 +11,7 @@ import DriverSearch from 'components/driversearch/DriverSearch';
 //  import banner1 from 'images/banner1.jpg';
  import banner2 from 'images/banner2.jpg';
 import banner3 from 'images/banner3.jpg';
+
 // import banners from 'images/banners.jpg';
 
 
@@ -44,7 +45,7 @@ function Home() {
           <h2 className="banner__tophl4">Bike</h2>
           <h2 className="banner__tophl5">Right-To-Own</h2> */}
           </div>
-          <button className="banner__buttonl" onClick={()=>history.push('/partnership')}>Start Riding</button>
+          <button className="banner__buttonl" onClick={()=>history.push('/startriding')}>Start Riding</button>
        </div>
       <div className="category__container">
         {/* <Category 
